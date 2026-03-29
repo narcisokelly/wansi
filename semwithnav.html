@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0px;
+        }
+
+        nav {
+            background-color: palevioletred;
+            padding: 10px;
+        }
+
+        #navbar ul 
+        {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: palevioletred;
+        }
+
+        #navbar li
+        {
+            float: left;
+        }
+
+        #navbar li a:hover 
+        {
+            background-color: plum;
+        }
+
+        #navbar a
+        {
+            display: block;
+            color: rgb(246, 240, 240);
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+         
+        header {
+            background-color: lightpink;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background-color: palevioletred;
+            padding: 10px;
+        }
+
+        main {
+            background-color: white;
+            height: auto;
+            padding: 10px;
+        }
+
+        aside {
+            background-color: white;
+            width: 20%;
+            float: left;
+            padding: 10px;
+        }
+
+        section {
+            background-color: white;
+            width: 40%;
+            float: left;
+            padding: 10px;
+        }
+
+        article {
+            background-color: white;
+            width: 40%;
+            float: left;
+            padding: 10px;
+        }
+
+        footer {
+            background-color: lightpink;
+            padding: 25px;
+            clear: both;
+            text-align: center;
+        }
+
+        p {
+            text-align: justify;
+        }
+        
+        @media screen and (max-width: 600px){
+            aside,
+            section,
+            article{
+            width: 100px;
+        }
+    }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>This is a Header</h1>
+    </header>
+
+    <nav id="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <aside>
+            <h2>ASIDE</h2>    
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas qui totam dicta, blanditiis saepe sunt possimus hic inventore eveniet mollitia aliquam minus nostrum commodi, delectus ut? Ipsa sed aliquam quisquam!</p>
+        </aside>
+
+        <section>
+            <h2>SECTION</h2>    
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nisi delectus culpa in. Optio quas non eius esse minus asperiores nisi omnis laudantium consequuntur sapiente? Aperiam illum porro incidunt sit?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, nobis nulla. Harum nostrum quidem dolorem, amet, labore molestias odit vero neque error accusamus dolores laudantium fugiat magnam libero veniam consectetur?</p>
+        </section>
+
+        <article>
+            <h2>ARTICLE</h2>    
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nam nisi velit minus, molestiae suscipit consequatur provident quia hic ipsam dolor quae vel ut aspernatur quam, repudiandae quis. Magni, odit!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis omnis nihil tenetur totam excepturi praesentium fugit sequi! Maiores repellendus corporis, expedita reprehenderit, amet dolorum veniam fuga accusantium quae ex doloremque.</p>
+        </article>
+
+    </main>
+
+    <footer>
+        <h1>This is a Footer</h1>
+    </footer>
+
+</body>
+</html>
