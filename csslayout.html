@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <style>
+        * 
+        {
+            box-sizing: border-box;
+        }
+
+        body 
+        {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: white;
+        }
+
+        
+        .header 
+        {
+            background-color: deeppink;
+            color: white;
+            padding: 20px;
+        }
+
+    
+        .container 
+        {
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        /* Left Menu */
+        .menu 
+        {
+            width: 200px;
+        }
+
+        .menu button 
+        {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 8px;
+            border: 1px solid #ccc;
+            background: #eee;
+            cursor: pointer;
+            text-align: left;
+        }
+
+        .menu button.active 
+        {
+            background-color: gray;
+            color: white;
+        }
+
+        /* Content */
+        .content 
+        {
+            flex: 1;
+        }
+
+        /* 👉 ADD THIS (for links) */
+        .content a 
+        {
+            color: black;
+            text-decoration: underline;
+        }
+
+        .content a:hover 
+        {
+            color: deeppink;
+        }
+
+        
+        .sidebar 
+        {
+            width: 250px;
+            background-color: dimgray;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        
+        .footer 
+        {
+            margin: 20px;
+            padding: 15px;
+            background: #eee;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="header">
+        <h1>Welcome to My Homepage</h1>
+        <p>Use the menu to select different Stylesheets</p>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <!-- Left Menu -->
+        <div class="menu">
+            <button class="active">Stylesheet 1</button>
+            <button>Stylesheet 2</button>
+            <button>Stylesheet 3</button>
+            <button>Stylesheet 4</button>
+            <button>No Stylesheet</button>
+        </div>
+
+        <div class="content">
+            <h1>Same Page Different Stylesheets</h1>
+
+            <p>
+                This is a demonstration of how different stylesheets can change 
+                the layout of your HTML page. You can change the layout of this 
+                page by selecting different stylesheets in the menu, or by selecting one of the following links:
+            </p>
+
+
+            <p>
+                <a href="#">Stylesheet1</a>,
+                <a href="#">Stylesheet2</a>,
+                <a href="#">Stylesheet3</a>,
+                <a href="#">Stylesheet4</a>
+            </p>
+
+            <h2>No Styles</h2>
+            <p>
+                This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:
+            </p>
+
+            <p>
+                <a href="#">No Stylesheet</a>
+            </p>
+        </div>
+
+        <div class="sidebar">
+            <h3>Side-Bar</h3>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim a soluta ipsa debitis, recusandae omnis odit aliquid doloribus architecto veniam laborum quasi, asperiores exercitationem error ex corrupti quas laudantium voluptatem?
+            </p>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis culpa reprehenderit ducimus voluptatum sapiente impedit, autem pariatur dolore laudantium quis, quas minus eligendi optio natus voluptatem repellat delectus molestiae vero. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam quasi rerum perspiciatis provident, itaque quas. Doloremque doloribus vel necessitatibus! Debitis enim tempore minus recusandae, animi ducimus perspiciatis illo veritatis illum?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit nobis dicta minima mollitia quis voluptatum voluptatibus praesentium sequi expedita! Eligendi assumenda reprehenderit eius, illum at ullam quisquam laboriosam. Alias, praesentium.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, fugiat possimus veritatis nobis quas iusto rem accusamus inventore sequi tempore similique ad dolores, consequatur nihil doloremque. Commodi officia autem aliquid?
+        </p>
+    </div>
+
+</body>
+</html>

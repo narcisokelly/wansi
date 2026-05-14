@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>FLEX PART 1</title>
+<style>
+
+    body 
+    {
+        font-family: Arial, sans-serif;
+    }
+
+    .a
+    {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    .a .item1 
+    {
+        width: 200px;
+        background: skyblue;
+    }
+
+    .a .item2 
+    {
+        width: 75px;
+        background: pink;
+    }
+
+    .b
+    {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    .b .item1 
+    {
+        width: 50px;
+        background: lightgray;
+    }
+
+    .b .item2 
+    {
+        flex: 1;
+        background: pink;
+    }
+
+    .b .item3 
+    {
+        width: 75px;
+        background: skyblue;
+    }
+
+    
+    .c
+    {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    
+    .c div 
+    {
+        background: pink;
+        padding: 5px 10px;
+    }
+
+
+    .flexbox 
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        border: 2px solid gray;
+        padding: 10px;
+    }
+    
+    .flexbox div 
+    {
+        background: pink;
+        padding: 5px 10px;
+    }
+</style>
+</head>
+<body>
+
+    <h3>12a</h3>
+    <div class="a">
+        <div class="item1">200px</div>
+        <div class="item2">75px</div>
+    </div>
+
+    <h3>12b</h3>
+    <div class="b">
+        <div class="item1">item1</div>
+        <div class="item2">item2</div>
+        <div class="item3">item3</div>
+    </div>
+
+    <h3>12c</h3>
+    <div class="c">
+        <div>item1</div>
+        <div>item2</div>
+        <div>item3</div>
+        <div>item4</div>
+    </div>
+
+    <h3>12d</h3>
+    <div class="flexbox">
+        <div>item1</div>
+        <div>item2</div>
+    </div>
+
+    </body>
+    </html>
